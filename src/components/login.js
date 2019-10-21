@@ -4,15 +4,12 @@ import * as firebase from 'firebase'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class Login extends Component {
-
     constructor(props) {
         super(props)
-
         this.state = {
             user: []
         }
     }
-
 
     loginUser() {
         const email = this.refs.email.value;
@@ -59,18 +56,11 @@ class Login extends Component {
                         }
                     }
                 }, 300)
-
-
-
             })
-
         }
     }
 
     render() {
-
-
-
         return (
             <div>
                 <h1 ref="heading">Welcome to Campus Recruiment System</h1> <br />
@@ -87,9 +77,7 @@ class Login extends Component {
                     <button className="btn btn-primary" onClick={this.loginUser.bind(this)} ref="signupBtn">Login</button>
                 </div>
             </div>
-
         );
-
     }
 }
 
