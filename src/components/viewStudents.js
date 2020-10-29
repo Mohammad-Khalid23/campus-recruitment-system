@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import * as firebase from 'firebase'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
-
-
 
 class ViewStudents extends Component {
 

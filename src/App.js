@@ -4,7 +4,6 @@ import * as firebase from 'firebase'
 import Header from './components/header.js'
 import Signup from './components/signup.js'
 import Login from './components/login.js'
-import Welcome from './components/welcome.js'
 import Students from './components/student.js'
 import Company from './components/company.js'
 import CreateResume from './components/createResume.js'
@@ -99,40 +98,6 @@ class App extends Component {
 
     );
   }
-}
-
-class StdNav extends Component {
-
-  
-  render() {
-
-    return (
-      <div> <h1>Company portal</h1>
-        <Router>
-          <div>
-            <ul className="nav nav-tabs">
-              {/* <li role="presentation"><Link to="/profile">View Profile</Link></li> */}
-              <li role="presentation"><Link to="/allStudents">View Resume</Link></li>
-              <li role="presentation"><Link to="/postJob">Post Job</Link></li>
-              <li role="presentation"><Link to="/allJobs">View Jobs</Link></li>
-              <li role="presentation"><Link to="/allApplicant">View Applicants</Link></li>
-
-            </ul>
-            <div className="pannel">
-              <Route path="/allStudents" component={ViewStudents} />
-              <Route exact path="/profile" component={Profile} />
-              <Route path="/postjob" component={PostJobs} />
-              <Route path="/allJobs" component={ShowJobs} />
-            </div>
-          </div>
-        </Router>
-        {/* <Profile /> */}
-
-      </div>
-    )
-
-  }
-
 }
 
 export default App;

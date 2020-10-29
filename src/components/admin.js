@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
-// import '../App.css';
-import * as firebase from 'firebase'
-import Header from './header.js'
-import App from '../App';
 import ViewStudents from './viewStudents.js'
 import Profile from './profile.js'
 import ShowJobs from './allJobs.js'
-
-
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import ReactDom from 'react-dom';
-
 
 class Admin extends Component {
     render() {

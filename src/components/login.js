@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import * as firebase from 'firebase'
-// import App from './/App.js'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class Login extends Component {
 

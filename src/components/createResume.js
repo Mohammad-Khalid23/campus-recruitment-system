@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
 import * as firebase from 'firebase'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class CreateResume extends Component {
 

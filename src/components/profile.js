@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import '../App.css';
 import * as firebase from 'firebase'
-import Header from './header.js'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import ReactDom from 'react-dom';
+import '../App.css';
 
 class Profile extends Component {
 
