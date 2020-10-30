@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-// import '../App.css';
 import * as firebase from 'firebase'
-import Header from './header.js'
-import App from '../App';
 import CreateResume from './createResume.js'
 import UpdateResume from './updateResume.js'
 import Profile from './profile.js'

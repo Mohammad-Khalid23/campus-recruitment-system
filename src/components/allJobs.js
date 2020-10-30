@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 import * as firebase from 'firebase'
-import PostJob from './postJob.js'
 import '../App.css';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
-
-
-
 
 class ShowJobs extends Component {
 
@@ -75,7 +69,7 @@ class ShowJobs extends Component {
                             }
                         })
 
-                    } else if (userType == "company") {
+                    } else if (userType === "company") {
                         firebase.database().ref('jobs').orderByChild('uid').equalTo(firebase.auth().currentUser.uid).once('value').then((snap) => {
                             var obj = snap.val()
                             var job = [];

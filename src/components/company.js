@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-// import '../App.css';
-import Header from './header.js'
-import App from '../App';
 import PostJobs from './postJob.js'
 import ViewStudents from './viewStudents.js'
 import Profile from './profile.js'
 import ShowJobs from './allJobs.js'
 import * as firebase from 'firebase'
-
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
@@ -39,36 +35,37 @@ class Company extends Component {
                     this.setState({
                         users: newUser
                     })
-                
+
                 })
-            }}
-        )
             }
-                    render() {
-                        return (
-                            <div> <h1>Company portal</h1>
-                                <Router>
-                                    <div>
-                                        <ul className="nav nav-tabs">
-                                            {/* <li role="presentation"><Link to="/profile">View Profile</Link></li> */}
-                                            <li role="presentation"><Link to="/allStudents">View Resume</Link></li>
-                                            <li role="presentation"><Link to="/postJob">Post Job</Link></li>
-                                            <li role="presentation"><Link to="/allJobs">View Jobs</Link></li>
+        }
+        )
+    }
+    render() {
+        return (
+            <div> <h1>Company portal</h1>
+                <Router>
+                    <div>
+                        <ul className="nav nav-tabs">
+                            {/* <li role="presentation"><Link to="/profile">View Profile</Link></li> */}
+                            <li role="presentation"><Link to="/allStudents">View Resume</Link></li>
+                            <li role="presentation"><Link to="/postJob">Post Job</Link></li>
+                            <li role="presentation"><Link to="/allJobs">View Jobs</Link></li>
 
-                                        </ul>
-                                        <div className="pannel">
-                                            <Route path="/allStudents" component={ViewStudents} />
-                                            <Route exact path="/profile" component={Profile} />
-                                            <Route path="/postjob" component={PostJobs} />
-                                            <Route path="/allJobs" component={ShowJobs} />
-                                        </div>
-                                    </div>
-                                </Router>
-                                <Profile />
+                        </ul>
+                        <div className="pannel">
+                            <Route path="/allStudents" component={ViewStudents} />
+                            <Route exact path="/profile" component={Profile} />
+                            <Route path="/postjob" component={PostJobs} />
+                            <Route path="/allJobs" component={ShowJobs} />
+                        </div>
+                    </div>
+                </Router>
+                <Profile />
 
-                            </div>
+            </div>
 
-                        )
-                    }
-                }
+        )
+    }
+}
 export default Company;

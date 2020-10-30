@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import * as firebase from 'firebase'
-import '../App.css';
 import  Login from './login.js'
-import Students from './student.js'
+import '../App.css';
+
 class Welcome extends Component {
-
-
 
     render() {
 

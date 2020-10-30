@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 import * as firebase from 'firebase'
-import CreateCv from './createResume.js'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-
-
-
 
 class ShowResume extends Component {
 
@@ -33,7 +28,7 @@ class ShowResume extends Component {
         setTimeout(() => {
             console.log(console.log(this.state) // this shows blank array
             )
-        },5000)
+        }, 5000)
     }
 
 
@@ -42,11 +37,11 @@ class ShowResume extends Component {
             <div className="row">
                 <h1>Resume</h1>
                 {
-                    this.state.resume.map((data)=>{
+                    this.state.resume.map((data) => {
 
-                           return <div>
-                                {data.name}
-                            </div>
+                        return <div>
+                            {data.name}
+                        </div>
 
                     })
                 }

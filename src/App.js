@@ -4,7 +4,6 @@ import * as firebase from 'firebase'
 import Header from './components/header.js'
 import Signup from './components/signup.js'
 import Login from './components/login.js'
-import Welcome from './components/welcome.js'
 import Students from './components/student.js'
 import Company from './components/company.js'
 import CreateResume from './components/createResume.js'
@@ -88,7 +87,6 @@ class App extends Component {
     );
   }
 }
-
 class StdNav extends Component {
   render() {
     return (
@@ -115,5 +113,4 @@ class StdNav extends Component {
     )
   }
 }
-
 export default App;

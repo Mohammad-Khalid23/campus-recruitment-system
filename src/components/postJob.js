@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-// import '../App.css';
-import * as firebase from 'firebase'
-import Header from './header.js'
 
 class PostJobs extends Component {
     constructor() {
@@ -15,29 +12,15 @@ class PostJobs extends Component {
     job() {
         const jobTitle = this.refs.title.value;
         const jobType = this.refs.type.value;
-        const salary = this.refs.salary.value;
         const jobSkills = this.refs.skills.value;
         const jobQualification = this.refs.qualification.value;
         const jobExperience = this.refs.experience.value;
-        const userId = firebase.auth().currentUser.uid;
 
         if (jobTitle === "" || jobType === "" || jobSkills === "" || jobQualification === "" || jobExperience === "") {
             alert("Please Fill the Form Completly")
         }
 
         else {
-            var job = {
-                name: jobTitle,
-                type: jobType,
-                salary: salary,
-                skills: jobSkills,
-                qualification: jobQualification,
-                experience: jobExperience,
-                uid : firebase.auth().currentUser.uid
-            }
- 
-            const rootRef = firebase.database().ref('jobs').push(job);
-
             this.refs.title.value = ""
             this.refs.type.value = ""
             this.refs.salary.value = ""
