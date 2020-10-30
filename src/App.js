@@ -17,16 +17,14 @@ import UpdateResume from './components/updateResume.js'
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 class App extends Component {
-
   constructor(props) {
     super(props)
-
     this.state = {
       activeUser: null,
       user: []
     }
-
   }
+  
   componentWillMount() {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
@@ -45,22 +43,16 @@ class App extends Component {
 
   logout() {
     firebase.auth().signOut().then(function () {
-      alert("Logout")
       this.props.history.push('/')
     }).catch(function (err) {
       console.log(err.message);
     })
-
   }
-
-
 
   render() {
     return (
-      <div className="fluid-container" >
-
+      <div className="fluid-container">
         <Header />
-
         <Router >
           <div>
             <div className="nav-div">
@@ -88,16 +80,37 @@ class App extends Component {
               <Route path="/allStudents" component={ViewStudents} />
               <Route path="/profile" component={Profile} />
               <Route path="/postjob" component={PostJobs} />
-
-
             </div>
           </div>
         </Router>
-
       </div>
-
     );
   }
 }
-
+class StdNav extends Component {
+  render() {
+    return (
+      <div> <h1>Company portal</h1>
+        <Router>
+          <div>
+            <ul className="nav nav-tabs">
+              {/* <li role="presentation"><Link to="/profile">View Profile</Link></li> */}
+              <li role="presentation"><Link to="/allStudents">View Resume</Link></li>
+              <li role="presentation"><Link to="/postJob">Post Job</Link></li>
+              <li role="presentation"><Link to="/allJobs">View Jobs</Link></li>
+              <li role="presentation"><Link to="/allApplicant">View Applicants</Link></li>
+            </ul>
+            <div className="pannel">
+              <Route path="/allStudents" component={ViewStudents} />
+              <Route exact path="/profile" component={Profile} />
+              <Route path="/postjob" component={PostJobs} />
+              <Route path="/allJobs" component={ShowJobs} />
+            </div>
+          </div>
+        </Router>
+        {/* <Profile /> */}
+      </div>
+    )
+  }
+}
 export default App;

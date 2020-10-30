@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import * as firebase from 'firebase'
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import '../App.css';
 
 class Signup extends Component {
 
     constructor() {
-        super()
+            super()
 
-        this.state = {
-            user: null
+            this.state = {
+                user: null
+            }
         }
-    }
-    //setting radio button value in state this condition is just for checking
+        //setting radio button value in state this condition is just for checking
     setUser(event) {
         if (this.state.user === null) {
             this.setState({
@@ -35,7 +36,7 @@ class Signup extends Component {
             alert("please fill the form completly")
         } else {
             const auth = firebase.auth();
-            auth.createUserWithEmailAndPassword(email, pass).catch(function (err) {
+            auth.createUserWithEmailAndPassword(email, pass).catch(function(err) {
                 console.log(err.code)
                 console.log(err.message);
                 alert(err.message);
@@ -68,41 +69,76 @@ class Signup extends Component {
 
 
 
-        return (
-            <div>
-                <h1 ref="heading">Welcome to Campus Recruiment System</h1> <br />
+        return ( <
+            div >
+            <
+            h1 ref = "heading" > Welcome to Campus Recruiment System < /h1> <br / >
 
-                <div className="form sign_height">
+            <
+            div className = "form sign_height" >
 
-                    <h1>Signup Form</h1>
-                    <label htmlFor="name">
-                        Name  <input className="form-control" type="text" id="name" ref="name" />
-                    </label>
-                    <label htmlFor="email">
-                        Email   <input className="form-control" type="text" id="email" ref="email" />
-                    </label>
-                    <br />
-                    <label htmlFor="pass">
-                        Password <input className="form-control" type="password" id="pass" ref="password" />
-                    </label>
-                    <label htmlFor="number">
-                        Number   <input className="form-control" type="text" id="number" ref="number" />
-                    </label>
-                    <br />
+            <
+            h1 > Signup Form < /h1> <
+            label htmlFor = "name" >
+            Name < input className = "form-control"
+            type = "text"
+            id = "name"
+            ref = "name" / >
+            <
+            /label> <
+            label htmlFor = "email" >
+            Email < input className = "form-control"
+            type = "text"
+            id = "email"
+            ref = "email" / >
+            <
+            /label> <
+            br / >
+            <
+            label htmlFor = "pass" >
+            Password < input className = "form-control"
+            type = "password"
+            id = "pass"
+            ref = "password" / >
+            <
+            /label> <
+            label htmlFor = "number" >
+            Number < input className = "form-control"
+            type = "text"
+            id = "number"
+            ref = "number" / >
+            <
+            /label> <
+            br / >
 
-                    {/*Radio button*/}
-                    <div className="radioButton" onChange={this.setUser.bind(this)}>
-                        <label htmlFor="student">Student &nbsp;
-            <input type="radio" value="student" name="user" id="student" />
-                        </label> &nbsp;
-                <label htmlFor="company">Company &nbsp;
-            <input type="radio" value="company" name="user" id="company" />
-                        </label></div>     <br />
+            { /*Radio button*/ } <
+            div className = "radioButton"
+            onChange = { this.setUser.bind(this) } >
+            <
+            label htmlFor = "student" > Student & nbsp; <
+            input type = "radio"
+            value = "student"
+            name = "user"
+            id = "student" / >
+            <
+            /label> &nbsp; <
+            label htmlFor = "company" > Company & nbsp; <
+            input type = "radio"
+            value = "company"
+            name = "user"
+            id = "company" / >
+            <
+            /label></div > < br / >
 
-                    <button className="btn btn-primary" onClick={this.signupUser.bind(this)} ref="signupBtn">signup</button> <br />
-                    <p><br /><Link to="/">Already Login..??</Link></p>
-                </div>
-            </div>
+            <
+            button className = "btn btn-primary"
+            onClick = { this.signupUser.bind(this) }
+            ref = "signupBtn" > signup < /button> <br / >
+            <
+            p > < br / > < Link to = "/" > Already Login.. ? ? < /Link></p >
+            <
+            /div> <
+            /div>
 
 
         );

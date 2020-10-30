@@ -1,172 +1,204 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
 }
 
 .App-intro {
-  font-size: large;
-}
-/*my page*/
-.heading{
-  color: white;
-}
-.main_Heading{
-  text-align: center;
-  margin: 0 auto;
-  width: 95%;
-  border: 2px solid grey;
-  height: 100px;
-  padding: 10px;
-  background-color: #337ab7;
-  
-    }
-.form ,.form1{
-  padding-left: 20px;
-  border: 2px solid #337ab7;
-  margin: 0 auto;
-  border-radius: 0 15px;
-  margin-top: 15px;
-  color: #337ab7
+    font-size: large;
 }
 
-.form1{
-  height: 600px;
-  width: 60%;
+
+/*my page*/
+
+.heading {
+    color: white;
 }
-.sign_Height{
-  height:550px;
-  width: 350px;
+
+.main_Heading {
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    border: 2px solid grey;
+    height: 100px;
+    padding: 10px;
 }
-.log_height{
-  height:350px;
-  width :30%;
+
+.form,
+.form1 {
+    padding-left: 20px;
+    border: 2px solid #337ab7;
+    margin: 0 auto;
+    border-radius: 0 15px;
+    margin-top: 15px;
+    color: #337ab7
 }
-input{
-  margin: 10px;
+
+.form1 {
+    height: 600px;
+    width: 60%;
 }
-button{
-  margin: 0 auto;
-  margin-bottom: 10px;
-  color: white; 
-  border : 1px solid 337ab7;
+
+.sign_Height {
+    height: 550px;
+    width: 350px;
 }
+
+.log_height {
+    height: 350px;
+    width: 30%;
+}
+
+input {
+    margin: 10px;
+}
+
+button {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: white;
+    border: 1px solid 337ab7;
+}
+
 
 /*Navigation*/
-.nav-div{
-  border: 2px solid grey;
-  padding: 20px;
-  width: 95%;
-  margin: 0 auto;
-}
-ul{
-margin:0 auto;
- width: 70%; 
-text-align: center;
-margin-bottom: 20px;
-}
-li{
-  border : 2px solid #337ab7;
-  border-radius: 0 10px; 
-  list-style: none;
-  /* padding: 10px; */
-  margin: 10x;
 
-}
-h1{
-  color: #337ab7;
+.nav-div {
+    border: 2px solid grey;
+    padding: 20px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: blue;
 }
 
-.profileInfo{
-  border-bottom: 2px solid #337ab7;
+ul {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 20px;
 }
-.right{
-  float: right;
-  margin-top: -18px;
-  padding: 6px 8px;
-  border-radius:5px;
-  border : none;
-  border :2px solid #337ab7;
-  background-color: white;
-  /* background-color: rgba(51, 122, 183, 0.81) */
+
+li {
+    border: 2px solid #337ab7;
+    border-radius: 0 10px;
+    list-style: none;
+    /* padding: 10px; */
+    margin: 10x;
 }
+
+h1 {
+    color: #337ab7;
+}
+
+.profileInfo {
+    border-bottom: 2px solid #337ab7;
+}
+
+.right {
+    float: right;
+    margin-top: -18px;
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid #337ab7;
+    background-color: white;
+    /* background-color: rgba(51, 122, 183, 0.81) */
+}
+
+
 /*Content*/
-#content{
-  margin: 0 auto;
 
-  width: 95%;
-  border : 2px solid grey;
-    height: 150vh;    
-  padding: 10px;
+#content {
+    margin: 0 auto;
+    width: 95%;
+    border: 2px solid grey;
+    height: 77vh;
+    padding: 10px;
+    /* background-color: blue; */
 }
-h1{
-  text-align: center;
-}
-button{
-  margin-left: 10px;
 
+h1 {
+    text-align: center;
 }
-.white{
-  background-color: white;
-  border : 2px solid grey;
+
+button {
+    margin-left: 10px;
 }
+
+.white {
+    background-color: white;
+    border: 2px solid grey;
+}
+
+
 /*welcome page*/
-.main{
-  border : 2px solid grey;
-  border-radius:10px;
-  margin : 40px;
-   height: 80vh; 
-  padding: 10px;
-  text-align: centre;
-  font-family: Arial, Helvetica, sans-serif;
+
+.main {
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 40px;
+    height: 80vh;
+    padding: 10px;
+    text-align: centre;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
 /*Student pannel*/
-.pannel{
-  margin-top: 30px;
-}
-.row{
-float: left;
- /* border : 2px solid green;  */
-width: 40%;
-margin-left: 20px;
-}
-.jobDiv{
-  width: 50%;
-  /* border : 2px solid #337ab7; */
-float: right;
-margin-right: 30px;
-height: 60%;
-  border-radius: 0 0 0px 15px;  
 
-/* overflow: auto; */
+.pannel {
+    margin-top: 30px;
+}
 
+.row {
+    float: left;
+    /* border : 2px solid green;  */
+    width: 40%;
+    margin-left: 20px;
 }
-.profileHead{
-  color:white;
-  background-color: #337ab7;
-  margin-bottom: -1px;
-  border-radius: 0 15px 0px 0px;
+
+.jobDiv {
+    width: 50%;
+    /* border : 2px solid #337ab7; */
+    float: right;
+    margin-right: 30px;
+    height: 60%;
+    border-radius: 0 0 0px 15px;
+    /* overflow: auto; */
 }
-.userInfo{
-  font-size: 20px;
-  border : 2px solid #337ab7;
-  text-align: center;
-  margin: 0 auto;
-  padding: 10px;
-   border-radius: 0 0 0px 15px; 
-  color: #337ab7;
+
+.profileHead {
+    color: white;
+    background-color: #337ab7;
+    margin-bottom: -1px;
+    border-radius: 0 15px 0px 0px;
 }
+
+.userInfo {
+    font-size: 20px;
+    border: 2px solid #337ab7;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 0 0 0px 15px;
+    color: #337ab7;
+}
+
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
